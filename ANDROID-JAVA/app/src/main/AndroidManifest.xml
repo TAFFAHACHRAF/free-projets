@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jovanovic.stefan.products_management">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jovanovic.stefan.products_management.activities.product.ProductUpdateActivity"
+            android:label="Update Product"
+            android:parentActivityName="com.jovanovic.stefan.products_management.activities.product.ProductMainActivity"/>
+        <activity
+            android:name="com.jovanovic.stefan.products_management.activities.product.ProductAddActivity"
+            android:label="Add Product"
+            android:parentActivityName="com.jovanovic.stefan.products_management.activities.product.ProductMainActivity" />
+        <activity
+            android:name="com.jovanovic.stefan.products_management.activities.product.ProductMainActivity"
+            android:label="Products">
+        </activity>
+        <activity
+            android:name="com.jovanovic.stefan.products_management.activities.commande.CommandeMainActivity"
+            android:label="Commandes">
+        </activity>
+        <activity
+            android:name="com.jovanovic.stefan.products_management.activities.LoginActivity"
+            android:label="Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jovanovic.stefan.products_management.activities.dashbord.AdminActivity"
+            android:label="Dashbord">
+        </activity>
+        <activity
+            android:name="com.jovanovic.stefan.products_management.activities.dashbord.AffilieurActivity"
+            android:label="Dashbord">
+        </activity>
+    </application>
+
+</manifest>
