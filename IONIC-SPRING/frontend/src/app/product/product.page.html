@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Détails du produit
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content *ngIf="product">
+  <!-- Contenu du produit -->
+  <ion-card>
+    <img [src]="product.imageUrl" alt="Product Image">
+    <ion-card-header>
+      <ion-card-subtitle>{{ product.title }}</ion-card-subtitle>
+      <ion-card-title>Prix : {{ product.price }} DH</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Description : {{ product.description }}</p>
+      <p>Ville : {{ product.city }}</p>
+      <!-- Ajoutez ici d'autres informations sur le produit -->
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Affichez l'image du graphe uniquement si elle est disponible -->
+  
+  <!--<ion-button (click)="showGraph()">Check</ion-button>
+  <img [src]="graphImage" alt="Graph Image" *ngIf="graphImage" />-->
+  <ion-button (click)="showImage = true">Check</ion-button>
+  <img [src]="graphImage" alt="Graph Image" *ngIf="showImage && graphImage" />
+
+  
+
+</ion-content>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  ion-button.custom-button.Get-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #B25DB4 !important;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 3%;
+    margin-bottom: 10px; 
+    
+  }
+  
+  ion-button.custom-button.Enter-button {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 1%;
+    margin-bottom: 5px;
+    --color: #B25DB4;
+    --background: white;
+    --border-color: #B25DB4 !important;
+    --border-radius: 20px; /* Si vous souhaitez ajouter un arrondi aux coins */
+    --border-width: 2px; /* Si vous souhaitez ajuster l'épaisseur de la bordure */
+    border: 1px solid #B25DB4;
+    &::part(native) {
+      border-color: var(--border-color) !important;
+    }
+  }
+  
+    
+    ion-back-button {
+      --padding-start: 0;
+      --padding-top: 25px;
+      --width: 17px;
+      --height: 24px;
+      --font-family: "Inter", sans-serif;
+      --font-weight: bold;
+      --font-size: 20px;
+      --line-height: 24px;
+      --text-align: left;
+      --vertical-align: top;
+      --fill-color: #000000;
+    }
+    
+    ion-back-button::part(native) {
+      margin-left: 0;
+    }
+    
+
+
+    
+    
+    
+    
+    ion-button.custom-button.Get-button,
+  ion-button.custom-button.Enter-button,
+  ion-button.custom-button.Continue-button
+   {
+    text-transform: none;
+  }
+  
+    
+  
+  ion-button.custom-button.Continue-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #B25DB4 !important;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 120%;
+    margin-bottom: 10px; 
+    
+  }
+
+
+  .center-text {
+    text-align: center;
+
+        margin-top: 25px;
+      }
+      
+
+      .centered-text {
+        text-align: center;
+        margin-top: 20px;
+      }
+  
+  

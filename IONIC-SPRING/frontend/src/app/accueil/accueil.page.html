@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Liste des produits
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">
+        Logout
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let product of products" [routerLink]="['/product', product.id]">
+      <ion-thumbnail slot="start">
+        <img [src]="product.imageUrl" alt="Product Image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.title }}</h2>
+        <p>Prix : {{ product.price }} DH</p>
+        <p>Ville : {{ product.city }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

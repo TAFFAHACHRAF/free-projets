@@ -1,0 +1,58 @@
+.padding {
+    padding: 5%!important;
+  }
+  
+  .header{
+    ion-button{
+      height: 60px;
+      width: 60px;
+    }
+    ion-icon{
+      font-size: 2rem;
+    }
+  }
+  
+  h1 {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 22px;
+    color: #000000;
+  }
+  
+  /* what’s your date of birth? */
+  h2 {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: cursive;
+    font-style: normal;
+    font-size: 17px;
+    color: #000000;
+  }
+  .haveacc{
+    margin-top: 260px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: bold;
+  }
+  .input-wrapper{
+  
+    ::placeholder {
+      text-align: center;
+    }
+    
+    --border-color: #b25db4;
+    --border-width: 2px;
+    --border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+  .nextb{
+    margin-left: 20px;
+    margin-right: 20px;
+  }

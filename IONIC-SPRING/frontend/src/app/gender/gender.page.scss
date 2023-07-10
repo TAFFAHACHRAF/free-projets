@@ -1,0 +1,119 @@
+.padding {
+    padding: 5%!important;
+  }
+
+
+  .arrow-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  .arrow-button ion-icon {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  
+
+
+  
+  
+  .ion-border {
+    border: 1px solid var(--ion-color-custom);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+
+
+  
+  .button {
+    margin-left: 12px;
+     margin-right: 12px;
+   
+    
+  }
+  ion-button {
+    --border-radius: 15px;
+    padding-bottom: -5px;
+  }
+
+
+  .gender-item {
+    border: 1px solid var(--ion-color-custom);
+    border-radius: 20px;
+    padding: 3px;
+    margin-top: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+
+  .bold-title {
+    font-weight: bold;
+    margin-top: 70px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+
+  p {
+    font-size: 1.3em;
+    
+    font-family: "forte";
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  
+  ion-content {
+   
+    --ion-background-color: var(--ion-color-primary-contrast);
+    // --ion-background-color: linear-gradient(#485563, #29323c);
+  }
+  .custom-text-color {
+    color: var(--ion-color-custom); /* Couleur de l'écriture personnalisée */
+  }
+  
+  .custom-border-color {
+    --border-color: var(--ion-color-custom); /* Couleur du cadre personnalisée */
+  }
+  
+  ion-item {
+    div.ion-text-center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  
+  
+
+
+  ion-item {
+    --ion-background-color: transparent!important;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .centered-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 0.9em;
+  }
+
+
+  .custom-color{
+  color: var(--ion-color-custom);
+  }

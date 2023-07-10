@@ -1,0 +1,19 @@
+<ion-content>
+  <div class="pading">
+      <div class="header">
+        <ion-button  routerLink="/home" fill="clear">
+            <ion-icon slot="icon-only" color="dark" name="arrow-back" fill="clear"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="first">
+        <h1 class="title">Find your account </h1>
+        <h2 class="description">Please enter your email address.</h2>
+        <ion-item class="input-wrapper">
+            <ion-input type="mail" placeholder="Your Email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-button name="next" color="custom"  expand="block" class="nextb" routerLink="/changepassword" (click)="goToNextPage(email)">Next</ion-button>
+        <ion-button name="account" fill="clear" color="custom" class="haveacc" >Login</ion-button>
+     </div>
+  </div>
+</ion-content>

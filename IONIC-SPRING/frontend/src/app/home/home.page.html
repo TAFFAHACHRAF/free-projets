@@ -1,0 +1,43 @@
+<ion-content>
+  <div class="padding">
+    <div align="center" class="logo">
+      <img src="../../assets/logo.jpeg" />
+    </div>
+
+    <ion-item>
+      <ion-input color="dark" type="email" placeholder="Enter email" [(ngModel)]="loginData.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input color="dark" type="password" placeholder="Enter password" [(ngModel)]="loginData.password"></ion-input>
+    </ion-item>
+
+    <ion-text color="danger" *ngIf="loginData.password && loginData.password.length < 8">
+      * Please enter a password of at least 8 characters long
+    </ion-text>
+
+    <br>
+
+    <ion-button color="custom" expand="block" shape="round" class="ion-color-custom" (click)="validate()">Log In</ion-button>
+
+    <ion-item lines="none">
+      <div class="ion-text-center">
+        <ion-button color="medium" fill="clear" routerLink="/forgot1">Forgot your password?</ion-button>
+      </div>
+    </ion-item>
+
+    <ion-button color="custom" class="ion-color-customionic serve" expand="block" shape="round" routerLink="/name"
+      fill="outline">Create new account</ion-button>
+    <br>
+
+    <p class="ion-text-center">
+      <ion-text color="medium">Or join with</ion-text>
+    </p>
+
+    <p class="ion-text-center">
+      <ion-icon name="logo-facebook" color="tertiary"></ion-icon>
+      <ion-icon name="logo-twitter" color="secondary"></ion-icon>
+      <ion-icon name="logo-google" color="danger"></ion-icon>
+    </p>
+  </div>
+</ion-content>

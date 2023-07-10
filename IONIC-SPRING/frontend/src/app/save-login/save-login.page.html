@@ -1,0 +1,28 @@
+<ion-content class="ion-padding">
+  <div class="Save-login ion-padding">
+    <div class="heading ion-padding">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/accueil"></ion-back-button>
+      </ion-buttons>
+      <h1>Save your login info?</h1>
+      <p>We'll save the login for ..., so you won't need to enter it next time you log in.</p>
+    </div>
+    <ion-grid>
+      <br>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button color="custom" expand="block" shape="round" class="ion-color-custom" (click)="saveUserInfo()">Save</ion-button>
+        </ion-col>
+      </ion-row>
+      <br>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button color="custom" class="ion-color-customionic serve" expand="block" shape="round"  fill="outline">Not now</ion-button>
+
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <button class="already-have-account" onclick="yourFunction()" routerLink="/home">Already have an account?</button>
+</ion-content>

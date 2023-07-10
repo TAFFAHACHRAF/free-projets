@@ -1,0 +1,34 @@
+
+<ion-content>
+  <button class="arrow-button" (click)="goToPreviousPage()">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </button>
+
+  <h1 class="bold-title">What's your gender?</h1>
+  <p>You can change who sees your gender on your profile later.</p>
+
+  <ion-list lines="none" class="gender-item">
+    <ion-radio-group [(ngModel)]="selectedGender">
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio value="male"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Female</ion-label>
+        <ion-radio value="female"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <br>
+
+  <ion-button color="custom" expand="block" class="ion-color-custom button" (click)="goToNextPage()">
+    Next
+  </ion-button>
+
+  <div class="centered-text">
+    <ion-button routerLink="/home" fill="clear">
+      <h6 class="custom-color"><strong>Already have an account?</strong></h6>
+    </ion-button>
+  </div>
+</ion-content>

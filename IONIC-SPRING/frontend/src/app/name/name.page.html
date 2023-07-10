@@ -1,0 +1,30 @@
+<ion-content>
+  <button class="arrow-button" (click)="goToPreviousPage()"><ion-icon name="arrow-back-outline"></ion-icon></button>
+
+  <h1 class="bold-title">What's your name?</h1>
+  <p>Enter the name you use in real life.</p>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-item lines="none" class="ion-border">
+          <ion-input color="dark" type="name" placeholder="First name" [(ngModel)]="firstName"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item lines="none" class="ion-border">
+          <ion-input color="dark" type="name" placeholder="Last name" [(ngModel)]="lastName"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <br>
+
+  <ion-button color="custom" expand="block" (click)="goToNextPage(firstName, lastName)" class="ion-color-custom button">Next</ion-button>
+
+  <div class="centered-text">
+    <ion-button routerLink="/home" fill="clear">
+      <h6 class="custom-color" routerLink="/home"><strong>Already have an account?</strong></h6>
+    </ion-button>
+  </div>
+</ion-content>
