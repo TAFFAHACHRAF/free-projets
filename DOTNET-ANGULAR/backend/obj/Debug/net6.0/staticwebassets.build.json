@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "E/nW2+0EFD46t7j+4LmyCR+AG1bgOlialFaAUFx7+cQ=",
+  "Source": "nfcbackend",
+  "BasePath": "_content/nfcbackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

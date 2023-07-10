@@ -1,0 +1,46 @@
+<div class="p-4" style="width: 1350px;">
+  <div class="card">
+    <div class="card-body">
+      <h2>Socials</h2>
+      <div class="text-end">
+        <button class="btn btn-success btn-sm" routerLink="add">Add</button>
+      </div>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Link</th>
+              <th>Platform</th>
+              <th>Profile ID</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let social of socialData">
+              <tr>
+                <td>{{ social.id }}</td>
+                <td>{{ social.socialUrl }}</td>
+                <td>
+                  <ng-container [ngSwitch]="social.socialPlatform">
+                    <ng-container *ngSwitchCase="0">Facebook</ng-container>
+                    <ng-container *ngSwitchCase="1">Twitter</ng-container>
+                    <ng-container *ngSwitchCase="2">Instagram</ng-container>
+                    <ng-container *ngSwitchCase="3">Snapchat</ng-container>
+                    <ng-container *ngSwitchCase="4">LinkedIn</ng-container>
+                    <ng-container *ngSwitchDefault>Unknown</ng-container>
+                  </ng-container>
+                </td>
+                <td>{{ social.profileId }}</td>
+                <td>
+                  <button class="btn btn-primary btn-sm" [routerLink]="['update', social.id]" queryParamsHandling="merge">Update</button>
+                  <button class="btn btn-danger btn-sm" (click)="deleteSocial(social.id)">Delete</button>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

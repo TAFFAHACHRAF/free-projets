@@ -1,0 +1,22 @@
+<!-- Updated New Card Form -->
+<div class="p-4" style="width: 1350px;">
+  <div class="card-body">
+    <h3>Add New Card</h3>
+    <form (ngSubmit)="saveNewCard()" #newCardForm="ngForm">
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="activation" class="form-label">Activation</label>
+          <select class="form-select" id="activation" name="activation" [(ngModel)]="newCard.isActive" required>
+            <option [ngValue]=true>True</option>
+            <option [ngValue]=false>False</option>
+          </select>
+        </div>        
+        <div class="mb-3 col">
+          <label for="profileId" class="form-label">Profile ID</label>
+          <input type="text" class="form-control" id="profileId" name="profileId" disabled [(ngModel)]="newCard.profileId" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+</div>

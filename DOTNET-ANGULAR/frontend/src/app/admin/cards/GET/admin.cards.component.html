@@ -1,0 +1,35 @@
+<div class="p-4" style="width: 1350px;">
+  <div class="card">
+    <div class="card-body">
+      <h2>Cards</h2>
+      <div class="text-end">
+        <button class="btn btn-success btn-sm" routerLink="add">Add</button>
+      </div>
+        <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Card ID</th>
+              <th>Activation</th>
+              <th>Profile ID</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <ng-container *ngFor="let card of cardsData">
+              <tr>
+                <td>{{ card.id }}</td>
+                <td>{{ card.isActive }}</td>
+                <td>{{ card.profileId }}</td>
+                <td>
+                  <a class="btn btn-primary btn-sm" [routerLink]="['update', card.id]" queryParamsHandling="merge">Update</a>
+                  <button class="btn btn-danger btn-sm" (click)="deleteCard(card.id)">Delete</button>
+                </td>
+              </tr>
+            </ng-container>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

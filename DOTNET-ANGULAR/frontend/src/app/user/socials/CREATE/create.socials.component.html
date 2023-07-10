@@ -1,0 +1,23 @@
+<!-- Updated New Card Form -->
+<div class="p-4" style="width: 1350px;">
+  <div class="card-body">
+    <h3>Add New Card</h3>
+    <form (ngSubmit)="saveNewSocial()" #newCardForm="ngForm">
+      <div class="row">
+        <div class="mb-3 col">
+          <label for="socialPlatform" class="form-label">Social Platform</label>
+          <input type="number" class="form-control" id="socialPlatform" name="socialPlatform" [(ngModel)]="newSocial.socialPlatform" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="socialUrl" class="form-label">Social URL</label>
+          <input type="text" class="form-control" id="socialUrl" name="socialUrl" [(ngModel)]="newSocial.socialUrl" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="profileId" class="form-label">Profile ID</label>
+          <input type="text" class="form-control" id="profileId" name="profileId" disabled [(ngModel)]="newSocial.profileId" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </div>
+</div>
